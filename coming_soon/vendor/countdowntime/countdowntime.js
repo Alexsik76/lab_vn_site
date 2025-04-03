@@ -20,7 +20,8 @@
           var obj = $(this);
           var timeNow = new Date();
 
-          var tZ = options.timeZone; console.log(tZ);
+          var tZ = options.timeZone; 
+          console.log(tZ);
           var endYear = options.endtimeYear;
           var endMonth = options.endtimeMonth;
           var endDate = options.endtimeDate;
@@ -32,7 +33,7 @@
             var deadline = new Date(endYear, endMonth - 1, endDate, endHours, endMinutes, endSeconds);
           } 
           else {
-            var deadline = moment.tz([endYear, endMonth - 1, endDate, endHours, endMinutes, endSeconds], tZ).format();
+            var deadline = moment().add(10, 'days').calendar();
             console.log(deadline);
           }
 
