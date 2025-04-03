@@ -33,6 +33,7 @@
           } 
           else {
             var deadline = moment.tz([endYear, endMonth - 1, endDate, endHours, endMinutes, endSeconds], tZ).format();
+            console.log(deadline);
           }
 
           if(Date.parse(deadline) < Date.parse(timeNow)) {
