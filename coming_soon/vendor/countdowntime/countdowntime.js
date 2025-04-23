@@ -58,7 +58,6 @@
               'seconds': seconds
             };
           }
-
           function initializeClock(endtime) { 
             var daysSpan = $(obj).find('.days');
             var hoursSpan = $(obj).find('.hours');
@@ -81,14 +80,7 @@
             updateClock();
             var timeinterval = setInterval(updateClock, 1000);
           }
-
-          
-
-
         });
       }
     });
-
-    
-
 })(jQuery);
